@@ -1,13 +1,17 @@
+import java.util.Scanner;
+
 public class GalToLit {
     public static void main(String args[]){
 
-        double gallons;
+        int gallons = 0;
         double liters;
 
-        gallons = 10;
-        liters = gallons * 3.7854;
-        //convert to litters
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Inputkan Gallon yang ingin di convert : ");
+        gallons = scan.nextInt();
 
-        System.out.println(gallons + "gallons is" + liters + "liters");
+        liters = gallons *3.785;
+
+        System.out.println(gallons + " gallons adalah " + liters + " liters.");
     }
 }
